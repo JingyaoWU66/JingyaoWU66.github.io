@@ -1,116 +1,309 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jingyao Wu</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 20px;
-      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
       color: #222;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 60px 30px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 70px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 50px;
+      height: fit-content;
+    }
+
+    .profile-img {
+      width: 220px;
+      border-radius: 14px;
+      margin-bottom: 25px;
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      margin-top: 50px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
+      font-size: 34px;
+      margin-bottom: 6px;
+      font-weight: 700;
     }
 
     .subtitle {
       color: #666;
-      font-size: 18px;
-      margin-bottom: 40px;
+      font-size: 17px;
+      margin-bottom: 25px;
     }
 
-    a {
+    .links a {
+      display: block;
+      margin-bottom: 10px;
       color: #0066cc;
       text-decoration: none;
+      font-size: 16px;
     }
 
-    a:hover {
+    .links a:hover {
       text-decoration: underline;
     }
 
-    .button {
-      display: inline-block;
-      margin-right: 12px;
-      margin-top: 10px;
-      padding: 10px 18px;
-      border: 1px solid #222;
-      border-radius: 8px;
-      color: #222;
+    .main h2 {
+      font-size: 28px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
     }
 
-    .button:hover {
-      background: #f5f5f5;
+    .main p {
+      margin-bottom: 18px;
+      font-size: 17px;
+    }
+
+    .paper {
+      margin-bottom: 24px;
+    }
+
+    .paper-title {
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .paper-venue {
+      color: #666;
+      font-size: 15px;
+    }
+
+    .news-item {
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .profile-img {
+        width: 180px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <h1>JINGYAO WU</h1>
+  <div class="container">
 
-  <div class="subtitle">
-    Postdoctoral Associate · MIT Media Lab
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar">
+
+      <!-- Replace profile.jpg with your own image -->
+      <img src="profile.jpg" alt="Jingyao Wu" class="profile-img">
+
+      <h1>Jingyao Wu</h1>
+
+      <div class="subtitle">
+        Postdoctoral Associate<br>
+        MIT Media Lab
+      </div>
+
+      <div class="links">
+        <a href="mailto:jingyao@mit.edu">Email</a>
+
+        <a href="https://scholar.google.com/" target="_blank">
+          Google Scholar
+        </a>
+
+        <a href="https://github.com/JingyaoWU66" target="_blank">
+          GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/" target="_blank">
+          LinkedIn
+        </a>
+
+        <!-- Replace CV.pdf with your uploaded CV -->
+        <a href="CV.pdf" target="_blank">
+          CV
+        </a>
+      </div>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+      <h2>About</h2>
+
+      <p>
+        I am Jingyao, and my friends and professors also call me Jennifer.
+        I am currently working as a Postdoctoral Associate at the MIT Media Lab,
+        awarded the MIT–Novo Nordisk AI Postdoctoral Fellowship
+        (Jan 2025 – Jan 2027), hosted by Prof. Rosalind Picard.
+      </p>
+
+      <p>
+        I was born on February 14th, 1998, in a small city in northern China.
+        At the age of 17, I moved to Sydney, Australia to pursue my studies abroad,
+        beginning a journey across continents toward becoming an international
+        scholar and researcher.
+      </p>
+
+      <p>
+        I received my BE (Hons) degree with First Class Honours in
+        Telecommunication Engineering from the School of Electrical Engineering
+        and Telecommunications at the University of New South Wales (UNSW) in 2020.
+        During my undergraduate studies, I attended my first international conference,
+        ICASSP 2019 in Brighton, UK, which inspired my journey toward pursuing a PhD.
+      </p>
+
+      <p>
+        I completed my PhD in Signal Processing at UNSW in 2024 under the supervision
+        of Associate Professor Vidhyasaharan Sethu,
+        Professor Eliathamby Ambikairajah,
+        and Dr Ting Dang.
+      </p>
+
+      <p>
+        My research focuses on ambiguity-aware and human-centered AI,
+        affective computing, multimodal signal processing,
+        temporal modeling of human behavior,
+        and multisensory intelligence.
+      </p>
+
+      <p>
+        My work has been published in ICASSP, INTERSPEECH,
+        ACII, and IEEE Transactions on Affective Computing.
+        My publications include a Best Paper Award at ACII 2023
+        and a paper recognized among the Top 3% of ICASSP 2023 submissions.
+      </p>
+
+      <p>
+        I truly cherish the experiences I’ve had throughout this journey,
+        and I remain open to exploring and embracing new opportunities in the future.
+        I am actively seeking faculty positions — please feel free to reach out.
+      </p>
+
+      <h2>Research Interests</h2>
+
+      <p>
+        Ambiguity-aware AI · Human-centered AI · Affective Computing ·
+        Multimodal Signal Processing · Speech Intelligence ·
+        Temporal Modeling · Mental Health Sensing ·
+        Multisensory Intelligence
+      </p>
+
+      <h2>Selected News</h2>
+
+      <div class="news-item">
+        <strong>2026:</strong>
+        AMBER² accepted to ICASSP 2026.
+      </div>
+
+      <div class="news-item">
+        <strong>2026:</strong>
+        Serving as Publications Chair for INTERSPEECH 2026.
+      </div>
+
+      <div class="news-item">
+        <strong>2025:</strong>
+        Started as MIT–Novo Nordisk AI Postdoctoral Fellow at MIT Media Lab.
+      </div>
+
+      <div class="news-item">
+        <strong>2023:</strong>
+        Received the Best Paper Award at ACII 2023.
+      </div>
+
+      <h2>Selected Publications</h2>
+
+      <div class="paper">
+        <div class="paper-title">
+          AMBER²: Dual Ambiguity-Aware Emotion Recognition Applied to Speech and Text
+        </div>
+
+        <div class="paper-venue">
+          ICASSP 2026
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          Ambiguity-Aware Emotion Modeling
+        </div>
+
+        <div class="paper-venue">
+          ACII 2023 · Best Paper Award
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          Ambiguity-Aware Human-Centered AI
+        </div>
+
+        <div class="paper-venue">
+          IEEE Transactions on Affective Computing
+        </div>
+      </div>
+
+      <h2>Awards & Honors</h2>
+
+      <ul>
+        <li>MIT–Novo Nordisk AI Postdoctoral Fellowship</li>
+        <li>Best Paper Award, ACII 2023</li>
+        <li>ICASSP 2023 Top 3% Paper Recognition</li>
+        <li>First Class Honours, UNSW Sydney</li>
+      </ul>
+
+      <h2>Professional Service</h2>
+
+      <ul>
+        <li>INTERSPEECH 2026 Publications Chair</li>
+        <li>Organizer of workshops at ICASSP, ACII, and INTERSPEECH</li>
+        <li>ISCA PECRAC Board Member</li>
+        <li>Harvard–MIT Speech & Language Biomarker Network Organizer</li>
+      </ul>
+
+      <h2>Contact</h2>
+
+      <p>
+        Email:
+        <a href="mailto:jingyao@mit.edu">
+          jingyao@mit.edu
+        </a>
+      </p>
+
+    </div>
+
   </div>
 
-  <a class="button" href="https://scholar.google.com/" target="_blank">Google Scholar</a>
-  <a class="button" href="https://github.com/JingyaoWU66" target="_blank">GitHub</a>
-
-  <h2>About</h2>
-
-  <p>
-    I am Jingyao, and my friends and professors also call me Jennifer.
-    I am currently a Postdoctoral Associate at the MIT Media Lab,
-    awarded the MIT–Novo Nordisk AI Postdoctoral Fellowship
-    (Jan 2025 – Jan 2027), hosted by Prof. Rosalind Picard.
-  </p>
-
-  <p>
-    I was born in a small city in northern China and moved to Sydney,
-    Australia at the age of 17 to pursue my studies abroad.
-    Since then, my journey has taken me across continents in pursuit of research,
-    learning, and new experiences.
-  </p>
-
-  <p>
-    I received my BE (Hons) degree with First Class Honours in
-    Telecommunication Engineering from the University of New South Wales (UNSW) in 2020.
-    During my undergraduate studies, I attended my first international conference,
-    ICASSP 2019 in Brighton, UK, which inspired my journey toward a PhD.
-  </p>
-
-  <p>
-    I completed my PhD in Signal Processing at UNSW in 2024 under the supervision of
-    Associate Professor Vidhyasaharan Sethu,
-    Professor Eliathamby Ambikairajah,
-    and Dr Ting Dang.
-  </p>
-
-  <p>
-    My research focuses on ambiguity-aware and human-centered AI,
-    affective computing, multimodal signal processing,
-    and temporal modeling of human behavior.
-    My work has been published in venues including ICASSP,
-    INTERSPEECH, ACII, and IEEE Transactions on Affective Computing.
-    My publications include a Best Paper Award at ACII 2023
-    and a paper recognized among the Top 3% of ICASSP 2023 submissions.
-  </p>
-
-  <p>
-    I truly cherish the experiences I’ve had throughout this journey,
-    and I remain open to exploring and embracing new opportunities in the future.
-    I am actively seeking faculty positions — please feel free to reach out.
-  </p>
-
 </body>
+
 </html>
